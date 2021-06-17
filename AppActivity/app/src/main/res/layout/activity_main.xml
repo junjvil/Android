@@ -16,6 +16,19 @@
         android:contentDescription="imagen del ciclo de la vida de las actividades"
         tools:ignore="HardcodedText" />
 
+    <Button
+        android:id="@+id/btnCambio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Otra Pantalla"
+        android:textSize="15sp"
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/imgPrincipal"
+        android:layout_centerHorizontal="true"
+        android:onClick="Cambio"
+
+        />
+
 
 
 </RelativeLayout>
