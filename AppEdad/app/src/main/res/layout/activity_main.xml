@@ -70,6 +70,16 @@
         android:onClick="validar"
 
         />
+    <Button
+        android:id="@+id/btnTerminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25sp"
+        android:text="Terminar"
+        android:layout_below="@id/btnValidar"
+        android:onClick="validar"
+
+        />
 
     
 

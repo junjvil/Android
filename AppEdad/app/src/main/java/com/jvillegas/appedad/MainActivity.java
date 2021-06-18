@@ -54,5 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
         if(view.getId()==R.id.btnValidar){
             compara();}
+
+        if (view.getId()==R.id.btnTerminar){
+            finish();}
+
     }//fin del metodo  validar
 }
