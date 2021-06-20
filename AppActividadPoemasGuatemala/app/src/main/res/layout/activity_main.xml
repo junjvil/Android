@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poemas"
+        android:layout_marginTop="20sp"
+        android:textSize="35sp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="italic"
+        />
+
+    <ImageView
+        android:id="@+id/imgBandera"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/ic_bandera_guate1"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="15sp">
+
+            <Button
+                android:id="@+id/btnClasico"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="Poemas Clasicos"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30sp"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:onClick="metodo"
+                />
+
+            <Button
+                android:id="@+id/btnInfantil"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="Poemas Infantiles"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:onClick="metodo"
+
+                />
+
+            <Button
+                android:id="@+id/btnPatria"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="Poesia a la Patria"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/cardview_dark_background"
+                android:textStyle="bold"
+                android:onClick="metodo"
+                />
+
+            <Button
+                android:id="@+id/btnFinalizar"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:text="Finalizar"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#982E27"
+                android:textStyle="bold"
+                android:onClick="metodo"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+    
+
+
+
+</LinearLayout>

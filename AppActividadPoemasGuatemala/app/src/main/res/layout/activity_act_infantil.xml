@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActInfantil">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poemas Infantiles"
+        android:layout_marginTop="25sp"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tiPoema1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:justificationMode="inter_word"
+                android:layout_marginBottom="25sp"
+                android:text="@string/ipoema1"
+                android:textIsSelectable="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                android:src="@drawable/ic_elsapo"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tiPoema2"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:justificationMode="inter_word"
+                android:layout_marginBottom="25sp"
+                android:text="@string/ipoema2"
+                android:textIsSelectable="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                android:src="@drawable/ic_mediopuerto"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tiPoema3"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:justificationMode="inter_word"
+                android:layout_marginBottom="25sp"
+                android:text="@string/ipoema3"
+                android:textIsSelectable="true"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150sp"
+                android:src="@drawable/ic_carrisel"
+                />
+
+            <Button
+                android:id="@+id/btnInfRet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:text="Regresar"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="mInfRet"
+                android:backgroundTint="@color/teal_700"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

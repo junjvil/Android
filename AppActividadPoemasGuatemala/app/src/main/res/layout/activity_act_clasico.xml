@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActClasico">
+
+    <TextView
+        android:layout_marginTop="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poemas Clasico"
+        android:textStyle="italic"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tPoema1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25sp"
+                android:justificationMode="inter_word"
+                android:text="@string/poema1"
+                android:textIsSelectable="true"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_dondetehas" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tPoema2"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25sp"
+                android:justificationMode="inter_word"
+                android:text="@string/poema2"
+                android:textIsSelectable="true"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_deacuerdo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tpoema3"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25sp"
+                android:justificationMode="inter_word"
+                android:text="@string/poema3"
+                android:textIsSelectable="true"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_linealunas"
+                />
+
+
+            <Button
+                android:id="@+id/btnRegPrin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:text="Regresar"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:onClick="mClaRet"
+                android:backgroundTint="@color/teal_700"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
