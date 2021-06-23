@@ -13,4 +13,48 @@
         En estos casos se trata de una denominación puramente simbólica, sin que necesariamente coincida esta operación con la suma habitual en números, funciones, vectores, etc."
 
     </string>
+
+    <string name="hResta">
+        "La resta o la sustracción es una operación de aritmética que se representa con el signo (–);
+        representa la operación de eliminación de objetos de una colección.
+        Por ejemplo, hay 5 – 2 manzanas; significando 5 manzanas con 2 quitadas, con lo cual hay un total de 3 manzanas.
+        Por lo tanto, 5 – 2 = 3. Además de contar frutas, la sustracción también puede representar combinación de otras magnitudes físicas y abstractas usando diferentes tipos de objetos:
+        números negativos, fracciones, números irracionales, vectores, decimales, funciones, matrices y más.
+
+        La sustracción sigue varios patrones importantes. Es anticonmutativa, lo que significa que el cambio del orden cambia el signo de la respuesta.
+        No es asociativa, lo que significa que cuando se restan más de dos números, importa el orden en el que se realiza la resta.
+        Restar 0 no cambia un número. La sustracción también obedece a reglas predecibles relativas a las operaciones relacionadas, tales como la adición y la multiplicación.
+        Todas estas reglas pueden probarse a partir de la sustracción de números enteros y generalizarlas mediante los números reales y más allá.
+        Las operaciones binarias generales que siguen estos patrones se estudian en el álgebra abstracta."
+    </string>
+
+    <string name="hMultiplicacion">
+       "1. La historia delamultiplicación
+        2. Origen de la Multiplicación Los primeros en usar la multiplicación fueron los egipcios, aproximadamente en el año 2700 A.C.
+        Usaron un sistema que llamaron multiplicación por duplicación.
+        Otra civilización pionera en usar la multiplicación fue la sumeria,en Asia menor, hacia el 2600 A.C.
+        Inventaron las tablas de multiplicar y las escribían en tablas de arcilla secadas al sol.
+         3. -La multiplicación que se usa en laactualidad, fue inventada por los hindúes.
+         -Pitágoras, filósofo griego, fue el llamadodesarrollador y analizador de lamultiplicación.
+         4. Desarrollo histórico de la multiplicación-En Babilonia, usaban la siguiente fórmula:Reemplazando:5•3 = (5+3)•(5+3)-(5•5)-(3•3)/2 = 15
+         5. En China :•Los chinos multiplicaban con varillas debambú.
+         •Las varillas se disponen en formahorizontal, las que corresponden almultiplicando y en forma vertical las quecorresponden al multiplicador. Ejemplo:
+         multiplicar 25 por 342
+         6. En India: Los matemáticos hindúes a partir del siglo V, efectuaron la multiplicación por el procedimiento conocido con el nombre de cuadrículas.
+         Ejemplo, multiplicar 6358 por 547:
+         7. En Egipto:•Los egipcios multiplicaban por unmétodo que consistía endescomponer la multiplicación enuna serie de sumas abreviadas,duplicando, reduplicando y asísucesivamente el multiplicando,mientras que en el multiplicador sedebe hallar su mitad cada vez.
+        Para ver esta película, debe disponer de QuickTime™ y de un descompresor TIFF (sin comprimir)"
+    </string>
+    <string name="hDivision">
+        "En la matemática, la división es una operación parcialmente definida en el conjunto de los números naturales y los números enteros;
+        en cambio, en el caso de los números racionales, reales y complejos es siempre posible efectuar la división,
+        exigiendo que el divisor sea distinto de cero, sea cual fuera la naturaleza de los números por dividir.
+        En el caso de que sea posible efectuar la división, esta consiste en indagar cuántas veces un número (divisor) está "contenido" en otro número (dividendo).
+        El resultado de una división recibe el nombre de cociente. De manera general puede decirse que la división es la operación inversa de la multiplicación, siempre y cuando se realice en un campo.1
+
+        Debe distinguirse la división «exacta» (sujeto principal de este artículo) de la «división con resto» o residuo (la división euclídea).
+        A diferencia de la suma, la resta o la multiplicación, la división entre números enteros no está siempre definida;
+        en efecto: 4 dividido 2 es igual a 2 (un número entero), pero 2 entre 4 es igual a ½ (un medio), que ya no es un número entero.
+        La definición formal de «división» , «divisibilidad» y «conmensurabilidad», dependerá luego del conjunto de definición."
+    </string>
 </resources>
