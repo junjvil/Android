@@ -1,4 +1,4 @@
-    plugins {
+plugins {
     id 'com.android.application'
 }
 
@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.jvillegas.actividadcomplementaria"
+        applicationId "com.jvillegas.apptrasladodatos"
         minSdkVersion 19
         targetSdkVersion 30
         versionCode 1

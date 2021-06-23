@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Historia de la Resta"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        />
+
+    <EditText
+        android:id="@+id/txtR1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:hint="Ingrese un Numero"
+        />
+
+    <EditText
+        android:id="@+id/txtR2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:hint="Ingrese un Numero"
+        />
+
+    <TextView
+        android:id="@+id/txtRestaR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_margin="15sp"
+        android:gravity="center"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="Restar"
+        android:backgroundTint="#CF3607"
+        android:onClick="onClick"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Historia"
+        android:textSize="25sp"
+        android:layout_marginLeft="15sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+
+
+</LinearLayout>
