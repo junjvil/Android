@@ -1,0 +1,2 @@
+rootProject.name = "ActividadTrasladodeDatosentreActivitys"
+include ':app'

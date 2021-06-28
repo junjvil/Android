@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MA_Validar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biciesto"
+        android:textColor="#F0AA3F1D"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="30sp"
+        />
+
+    <TextView
+        android:id="@+id/lblAnio"
+        android:layout_width="200sp"
+        android:layout_height="30sp"
+        android:text="Año:>"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="20sp"
+        />
+
+    <TextView
+        android:id="@+id/txtAnioR"
+        android:layout_width="200sp"
+        android:layout_height="30sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        android:text="...."
+        android:textSize="20sp"
+        android:textColor="#DA1010"
+        />
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="30sp"
+        android:text="Meses:>"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+    
+    <TextView
+        android:id="@+id/txtMeses"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:hint="...."
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="30sp"
+        android:text="Semanas:>"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/txtSemanas"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:hint="...."
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="200sp"
+        android:layout_height="30sp"
+        android:text="Dias:>"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/txtDias"
+        android:layout_width="200sp"
+        android:layout_height="40sp"
+        android:hint="...."
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="25sp"
+        android:text="Regresar"
+        android:layout_gravity="center"
+        android:onClick="ejecutar"
+        />
+
+
+
+
+
+</LinearLayout>
