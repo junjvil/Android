@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Listado de Paises</string>
+    <string name="tituloApp">Paises</string>
+
+    <string name="iFinlandia">
+        "Poblacion:> 5,525,292 "
+    </string>
+    <string name="iIslandia">
+        "Poblacion:> 364,134 "
+    </string>
+    <string name="iIsrael">
+        "Poblacion:> 9,051,000 "
+    </string>
+    <string name="iItaly">
+        "Poblacion:> 59,641,488 "
+    </string>
+    <string name="iJapan">
+        "Poblacion:> 126,443,467 "
+    </string>
+    <string name="iMalawi">
+        "Poblacion:> 18,628,747 "
+    </string>
+    <string name="iRusia">
+        "Poblacion:> 146,749,000 "
+    </string>
+    <string name="iSlovenia">
+        "Poblacion:> 2,096,000 "
+    </string>
+    <string name="iSuiza">
+        "Poblacion:> 8,606,033 "
+    </string>
+    <string name="iThailandia">
+        "Poblacion:> 69,626,000 "
+    </string>
+
+</resources>

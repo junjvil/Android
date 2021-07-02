@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="50sp"
+        android:src="@drawable/ic_guatemala"
+        android:layout_marginTop="40sp"
+        />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listado Paises"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/lblSeparador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <ListView
+        android:id="@+id/lstPaises"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finalizar"
+        android:layout_margin="15sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:onClick="terminar"
+        />
+
+
+
+
+
+
+</LinearLayout>

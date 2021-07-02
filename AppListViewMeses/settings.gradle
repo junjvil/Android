@@ -1,0 +1,2 @@
+rootProject.name = "AppListViewMeses"
+include ':app'
