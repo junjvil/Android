@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -15,9 +16,11 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ListView lst;
+    private Button btn;
     ArrayList<String> mes=new ArrayList<>();
     ArrayList<Integer> cnt=new ArrayList<>();
     ArrayList<Integer> num=new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,16 +43,50 @@ public class MainActivity extends AppCompatActivity {
         mes.add("Noviembre");
         mes.add("Diciembre");
 
-        ArrayAdapter adapter=new ArrayAdapter(this, android.R.layout.simple_list_item_1,mes);
-        lst.setAdapter(adapter);
+        // agregando el contenido
+        cnt.add( R.string.Ene);
+        cnt.add(R.string.Feb);
+        cnt.add(R.string.Mar);
+        cnt.add(R.string.Abr);
+        cnt.add(R.string.May);
+        cnt.add(R.string.Jun);
+        cnt.add(R.string.Jul);
+        cnt.add(R.string.Ago);
+        cnt.add(R.string.Sep);
+        cnt.add(R.string.Oct);
+        cnt.add(R.string.Nov);
+        cnt.add(R.string.Dic);
+
+        num.add(1);
+        num.add(2);
+        num.add(3);
+        num.add(4);
+        num.add(5);
+        num.add(6);
+        num.add(7);
+        num.add(8);
+        num.add(9);
+        num.add(10);
+        num.add(11);
+        num.add(12);
+
+        AdaptadorLista adaptadorLista=new AdaptadorLista(this,R.layout.ma_vista_personalizada,mes,num);
+        lst.setAdapter(adaptadorLista);
 
         lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(MainActivity.this, "Estas haciendo click en el elemento "+this.getClass().getFields(), Toast.LENGTH_SHORT).show();
 
+                Intent intent=new Intent(getApplicationContext(),MA_Meses.class);
+                intent.putExtra("ms",mes.get(position));
+
+                intent.putExtra("cont",cnt.get(position));
+                startActivity(intent);
             }
-        });
+        });// fin del asignador de eventos
+
+
+
 
     }// fin del metodo onCreate
 }
