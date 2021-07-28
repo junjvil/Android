@@ -1,12 +1,17 @@
 package com.jvillegas.appventapint;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.core.content.ContextCompat;
 
 import org.w3c.dom.Text;
 
@@ -52,9 +57,12 @@ public class AdaptadorGenerico extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view=convertView;
+        Button llamarBoton;
+
 
         LayoutInflater lI=LayoutInflater.from(this.context);
         view=lI.inflate(R.layout.ma_formatos_cuadros,null);
+
 
         String aut=this.autores.get(position);
         int img=this.imagenes.get(position);
@@ -65,6 +73,20 @@ public class AdaptadorGenerico extends BaseAdapter {
         ImageView fielImg=view.findViewById(R.id.imgView);
         TextView title=view.findViewById(R.id.lblTit);
         TextView prec=view.findViewById(R.id.lblPrecio);
+        llamarBoton=view.findViewById(R.id.btnBuy);
+        llamarBoton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(context,MA_Vista_Compra.class);
+                //intent.putExtra("ath",aut);
+                intent.putExtra("img",img);
+                intent.putExtra("nm",nms);
+                intent.putExtra("prec",prc);
+                 context.startActivity(intent);
+//                Toast.makeText(context.getApplicationContext(), "Presionaste ", Toast.LENGTH_SHORT).show();
+            } 
+        });
+
 
         autor.setText(aut);
         fielImg.setImageResource(img);

@@ -7,7 +7,7 @@
         android:id="@+id/imgSub"
         android:layout_width="32sp"
         android:layout_height="42sp"
-        android:src="@drawable/ic_form_note"
+        android:src="@drawable/ic_obras"
         android:layout_marginLeft="20sp"
         android:layout_marginTop="30sp"
         />

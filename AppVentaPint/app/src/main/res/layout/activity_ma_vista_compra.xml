@@ -79,6 +79,7 @@
         android:textColor="@color/black"
         android:layout_margin="10sp"
         android:layout_below="@+id/txtNit"
+        android:onClick="onClick"
 
         />
     <Button
@@ -91,6 +92,7 @@
         android:layout_toRightOf="@+id/btnComprar"
         android:layout_margin="10sp"
         android:layout_below="@+id/txtNit"
+        android:onClick="onClick"
         />
 
 
