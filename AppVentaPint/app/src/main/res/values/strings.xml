@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">AppVentaPint</string>
+    <string name="app_name">Tienda Pintura Moderna</string>
+    <string name="titulo">Galeria de Arte Moderno</string>
+    <string name="descripcion">Elige una categoria para conocer nuestros productos</string>
+    <!-- Descripcion de los cuadros-->
+    <string name="desCua">"
+        Nulla cursus justo eu imperdiet fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam semper placerat sapien eleifend congue."</string>
+
 </resources>

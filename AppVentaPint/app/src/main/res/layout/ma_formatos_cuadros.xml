@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2980b9"
+    >
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="20sp"
+        android:layout_margin="15sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:src="@drawable/ic_cuadro_antiguo"
+        android:layout_below="@+id/lblTitle"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/lblTit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre:>"
+        android:layout_below="@+id/imgView"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:layout_marginLeft="50sp"
+        />
+    <TextView
+        android:id="@+id/lblPrecio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio:>"
+        android:layout_below="@+id/lblTit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:layout_marginLeft="50sp"
+        />
+
+    <TextView
+        android:id="@+id/txConte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desCua"
+        android:layout_below="@+id/lblPrecio"
+        android:padding="20sp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txConte"
+        android:text="Adquirir"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:backgroundTint="#03A9F4"
+        />
+
+</RelativeLayout>

@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         cnt.add(R.string.Nov);
         cnt.add(R.string.Dic);
 
+        // agregando numero 
         num.add(1);
         num.add(2);
         num.add(3);
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         num.add(10);
         num.add(11);
         num.add(12);
+        
 
         AdaptadorLista adaptadorLista=new AdaptadorLista(this,R.layout.ma_vista_personalizada,mes,num);
         lst.setAdapter(adaptadorLista);

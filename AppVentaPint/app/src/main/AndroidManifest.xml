@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppVentaPint">
+        <activity android:name=".MA_Expresionismo"></activity>
+        <activity android:name=".MA_Impresionismo" />
+        <activity android:name=".MA_Surrealismo" />
+        <activity android:name=".MA_Compra" />
+        <activity android:name=".MA_Vista_Compra" />
+        <activity android:name=".MA_Hiperrealismo" />
+        <activity android:name=".MA_realismo" />
+        <activity android:name=".MA_Productos" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
