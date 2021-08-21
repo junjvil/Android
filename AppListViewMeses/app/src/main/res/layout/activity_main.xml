@@ -8,6 +8,11 @@
     android:background="#2874A6"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/myBar"
+        layout="@layout/toolbar"
+        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

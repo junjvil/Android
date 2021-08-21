@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_informacion"
+        android:title="Informacion"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/item_paises"
+        android:title="Paises"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/item_salir"
+        android:title="Salir"
+        app:showAsAction="never"
+        />
+
+</menu>

@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/tlbMenu"
+        layout="@layout/toolbar"
+        />
+
+
+
     <ImageView
         android:id="@+id/imgLogo"
         android:layout_width="wrap_content"

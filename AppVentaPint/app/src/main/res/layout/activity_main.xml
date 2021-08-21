@@ -8,6 +8,12 @@
     tools:context=".MainActivity"
     android:background="#2980b9"
     >
+    <include
+        android:id="@+id/tlbMenu"
+        layout="@layout/toolbar_menu"
+        />
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

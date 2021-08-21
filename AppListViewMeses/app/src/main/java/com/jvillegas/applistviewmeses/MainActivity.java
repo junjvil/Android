@@ -1,9 +1,14 @@
 package com.jvillegas.applistviewmeses;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -20,12 +25,17 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> mes=new ArrayList<>();
     ArrayList<Integer> cnt=new ArrayList<>();
     ArrayList<Integer> num=new ArrayList<>();
+    private Toolbar toolbar;
+
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        toolbar=findViewById(R.id.myBar);
+        setSupportActionBar(toolbar);
 
         lst=findViewById(R.id.lstMes);
 
@@ -87,8 +97,34 @@ public class MainActivity extends AppCompatActivity {
             }
         });// fin del asignador de eventos
 
-
-
-
     }// fin del metodo onCreate
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.menu_list,menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        switch (item.getItemId()){
+
+            case R.id.item_info:
+                Toast.makeText(this, "Bienvenido te dare informacion sobre la aplicacion ", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item_calen:
+                Toast.makeText(this, "Seleccionaste la opcion de calendario", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item_salir:
+                Toast.makeText(this, "Saliedo de la aplicacion  hasta luego ", Toast.LENGTH_SHORT).show();
+                finish();
+                break;
+
+        }// fin del selector de condicio
+        return super.onOptionsItemSelected(item);
+    }
 }

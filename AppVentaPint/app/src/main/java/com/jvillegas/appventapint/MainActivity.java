@@ -1,9 +1,14 @@
 package com.jvillegas.appventapint;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.AdapterView;
@@ -15,6 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Toolbar toolbar;
 
     private ListView lst;
     private ArrayList<String> ctgr=new ArrayList<>();
@@ -29,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        toolbar=findViewById(R.id.tlbMenu);
+        setSupportActionBar(toolbar);
         this.agregarElementos();
     }
     private void agregarElementos(){
@@ -40,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
         ctgr.add("Surrealismo");
         ctgr.add("Impresionismo");
         ctgr.add("Expresionismo");
-        //ctgr.add("Arte abstracto");
-        //ctgr.add("Arte Pop");
 
         //  Realismo
         gRealismo.add("Pintura # 1 ctg 1");
@@ -77,9 +84,33 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-            }
+            }//
         });
 
+    }// fin de agregar elementos
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item_welcome:
+                Toast.makeText(this, "Has seleccionado la opcion Welcome", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item_pinturas:
+                Toast.makeText(this, "Has seleccionado la opcion Pinturas", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item_salir:
+                Toast.makeText(this, "Has seleccionado la opcion Salir", Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
 

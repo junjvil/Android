@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/tlbMenu"
+        layout="@layout/toolbar_menu"
+        />
+
+
+
+
     <GridView
         android:id="@+id/gridVista"
         android:layout_width="match_parent"

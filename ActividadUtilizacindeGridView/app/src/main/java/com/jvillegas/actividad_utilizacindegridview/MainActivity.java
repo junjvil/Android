@@ -1,10 +1,15 @@
 package com.jvillegas.actividad_utilizacindegridview;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -18,12 +23,18 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> nColores=new ArrayList<>();
     private ArrayList<Integer> lColores=new ArrayList<>();
     private ArrayList<Integer> vColores=new ArrayList<>();
+    private Toolbar tlbHerramienta;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        tlbHerramienta=findViewById(R.id.tlbMenu);
+        setSupportActionBar(tlbHerramienta);
         gVista=findViewById(R.id.gridVista);
+        getSupportActionBar().setTitle("Grid");
+
         this.cargar();
 
     }// fin del metodo onCreate
@@ -99,9 +110,30 @@ public class MainActivity extends AppCompatActivity {
             }
         });//fin de la programacion del evento
 
-
-
-
     }// fin del metodo cargar
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.menu_list,menu);
+
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item_inicio:
+                Toast.makeText(this, "En este segemento te muestro como funciona la aplicacion ", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item_grid:
+                Toast.makeText(this, "En este segmento es para la funcionalidad de la aplicacion ", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.item_salir:
+                Toast.makeText(this, "Saliendo de la aplicacion ", Toast.LENGTH_SHORT).show();
+                break;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 }
